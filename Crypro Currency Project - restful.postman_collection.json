@@ -1,0 +1,771 @@
+{
+	"info": {
+		"_postman_id": "ce7c561f-6c55-4fee-a3d9-5f60e356ab79",
+		"name": "Crypro Currency Project - restful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21754080"
+	},
+	"item": [
+		{
+			"name": "getAll: Currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/crypto-currencies",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"crypto-currencies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "917"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"395-fLFZX6OuyvUYroe8rBpzxSR/vMM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 10:29:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 14,\n        \"name\": \"ADA\",\n        \"email\": \"kia@gmail.com\",\n        \"description\": \"test desc test\",\n        \"created_at\": \"2023-03-01T20:55:13.082Z\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"BTC\",\n        \"email\": \"kia2@gmail.com\",\n        \"description\": \"test desc test2\",\n        \"created_at\": \"2023-03-01T15:48:35.817Z\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"ETH\",\n        \"email\": \"kia@gmail.com\",\n        \"description\": \"test desc test\",\n        \"created_at\": \"2023-03-01T20:56:06.584Z\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"kia\",\n        \"email\": \"ks@gm.com\",\n        \"description\": \"123s\",\n        \"created_at\": \"2023-03-02T23:20:15.998Z\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"kiar\",\n        \"email\": \"kiar@gmail.com\",\n        \"description\": \"123\",\n        \"created_at\": \"2023-03-02T23:24:40.617Z\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"ETH2\",\n        \"email\": \"kia@gmail.com\",\n        \"description\": \"kiarash&sana\",\n        \"created_at\": \"2023-03-03T00:35:56.497Z\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"ETH3\",\n        \"email\": \"kia@gmail.co\",\n        \"description\": \"kiarash&san\",\n        \"created_at\": \"2023-03-03T00:36:06.891Z\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"ETH5\",\n        \"email\": \"kia@gmail.co\",\n        \"description\": \"kiarash&san\",\n        \"created_at\": \"2023-03-03T00:36:19.368Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getOne: Currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/crypto-currencies/34",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"crypto-currencies",
+						"34"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/34",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"34"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "106"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6a-4piZ8HPsVbnSECBjDPYmhaasaZo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 17:57:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 34,\n    \"name\": \"btc\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"123\",\n    \"created_at\": \"2023-03-03T17:26:22.721Z\"\n}"
+				},
+				{
+					"name": "404 - Currency not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"9"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-oR73Vb/YPfDbgDgtA//MdHJasVY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 17:56:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Not Found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create: Currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ETH\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/crypto-currencies",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"crypto-currencies"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 - created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ETH\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-ZQ+rTkFgl761RO4SrxWNAUfH6Wg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 20:56:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"ETH\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\",\n    \"created_at\": \"2023-03-01T20:56:06.584Z\",\n    \"id\": 15\n}"
+				},
+				{
+					"name": "409 - currency exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"BTC\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-bxB0L4spPntLMUufgQvXaDIPMMg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 17:58:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 409,\n    \"message\": \"Conflict\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete: Currency",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BTC02\",\n    \"email\": \"kia2@gmail.com\",\n    \"description\": \"test desc test2\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/crypto-currencies/37",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"crypto-currencies",
+						"37"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "404 - currency not found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"BTC02\",\n    \"email\": \"kia2@gmail.com\",\n    \"description\": \"test desc test2\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/13",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"13"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-oR73Vb/YPfDbgDgtA//MdHJasVY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 18:00:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Not Found\"\n}"
+				},
+				{
+					"name": "200 - successfully deleted",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"BTC02\",\n    \"email\": \"kia2@gmail.com\",\n    \"description\": \"test desc test2\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/37",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"37"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-eYYJ2+v780RCJMJtVQpxZm/fhBw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 18:05:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 37,\n    \"name\": \"ADA\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\",\n    \"created_at\": \"2023-03-03T18:02:46.338Z\",\n    \"deleted_at\": \"2023-03-03T18:05:30.663Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update: Currency",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ADA\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/crypto-currencies/39",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"crypto-currencies",
+						"39"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - successfully deleted",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ADA\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/37",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"37"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-IPdYlFLu91I7Mz/ZmeIEWOMWIRw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 18:04:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 37,\n    \"name\": \"ADA\",\n    \"email\": \"kia@gmail.com\",\n    \"description\": \"test desc test\",\n    \"created_at\": \"2023-03-03T18:02:46.338Z\"\n}"
+				},
+				{
+					"name": "404 - currency not found",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ADA\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/crypto-currencies/39",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"crypto-currencies",
+								"39"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-oR73Vb/YPfDbgDgtA//MdHJasVY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 18:06:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Not Found\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "localhost:3000/v1.0",
+			"type": "string"
+		}
+	]
+}
